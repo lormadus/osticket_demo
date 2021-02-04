@@ -1,3 +1,10 @@
 az group create --name user30OsTicketPaaSRG --location "Korea South"
 
 az mysql server create --resource-group user30OsTicketPaaSRG --name USERNAMEosticketsrv01 --location "Korea South" --admin-user demouser --admin-password demo@pass123 --sku-name B_Gen5_2 --storage-size 51200 --ssl-enforcement Disabled
+
+az mysql server firewall-rule create --resource-group user30EOsTicketPaaSRG --server-name USERNAMEosticketsrv01 --name Internet --start-ip-address 0.0.0.0 --end-ip-address 255.255.255.255
+
+
+visual c++ 2019 패키지 설치 URL
+
+https://support.microsoft.com/ko-kr/topic/%EC%A7%80%EC%9B%90%EB%90%98%EB%8A%94-%EC%B5%9C%EC%8B%A0-visual-c-%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-2647da03-1eea-4433-9aff-95f26a218cc0
