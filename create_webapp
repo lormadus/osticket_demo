@@ -1,0 +1,4 @@
+az appservice plan create -n OsTicket -g user30OsTicketPaaSRG --is-linux -l "Korea South" --sku S1 --number-of-workers 1
+
+
+az webapp create -n user30osTicketsystem -g user30OsTicketPaaSRG -p OsTicket -r "php|7.3"
